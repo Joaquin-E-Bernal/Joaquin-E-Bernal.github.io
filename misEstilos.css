@@ -1,0 +1,141 @@
+header {
+    text-align: center; /* Centrar el contenido */
+    background-color:lemonchiffon;
+    border-radius: 10px;
+    padding: 20px; /* Espacio interior */
+}
+
+h1 {
+    font-size: 2.5em; /* Tamaño del título */
+    line-height: 1.5; /* Espacio entre líneas */
+}
+
+body {
+    background-color:antiquewhite;
+    color:#333;
+    font-family: Arial, sans-serif; /* Fuentes más comunes */
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #333;
+    border-radius: 10px;
+    color: #fff; /* Color del texto del enlace */
+}
+
+nav ul {
+    list-style-type: none; /* Elimino las viñetas */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centrar las opciones del menú */
+}
+
+nav ul li {
+    display: inline-block; /* Mostrar los elementos en línea */
+    margin-right: 10px; /* Espacio entre elementos */
+    margin-left: 10px;
+}
+
+hip {
+    text-decoration: none; /* Elimino el subrayado del enlace */
+    padding: 10px 20px; /* Espacio interior */
+    display: block; /* Hacer que el enlace ocupe todo el espacio del li */
+}
+
+hip:hover {
+    transition: background-color 0.6s ease;
+    background-color: #00c3ff63; /* Cambiar color de fondo al pasar el mouse */
+    border-radius: 10px;
+}
+/* !Menú de navegación */
+
+/* main*/
+#nosotros {
+    display: flex; /* Usar flexbox para diseño de dos columnas */
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+    padding: 50px; /* Espaciado interior */
+}
+
+.nosotros-imagen {
+    flex: 1; /* Ocupar 50% del espacio disponible */
+    max-width: 50%; /* Ancho máximo del contenedor de la imagen */
+    padding-right: 20px; /* Espacio a la derecha de la imagen */
+}
+
+.nosotros-imagen img {
+    max-width: 100%; /* Imagen ocupará todo el ancho del contenedor */
+    height: auto; /* Altura automática para mantener proporciones */
+}
+
+.nosotros-descripcion {
+    flex: 1; /* Ocupar 50% del espacio disponible */
+    max-width: 50%; /* Ancho máximo del contenedor de la descripción */
+}
+
+/* Estilos para el texto */
+.nosotros-descripcion h2 {
+    font-size: 1.5em; /* Tamaño del título */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.nosotros-descripcion p {
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+/* /main/*
+
+/* Banner */
+.banner {
+    border-radius: 10px;
+    position: relative; /* Para posicionar elementos hijos relativos a este contenedor */
+    overflow: hidden; /* Para que la imagen no sobresalga del contenedor */
+    height: auto; /* Altura del banner */
+}
+
+.banner img {
+    position: absolute; /* Posicionamiento absoluto para la imagen */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupar todo el ancho del contenedor */
+    height: 100%; /* Ocupar todo el alto del contenedor */
+    object-fit: cover; /* Ajustar la imagen al tamaño del contenedor sin deformarla */
+    z-index: -1; /* Colocar la imagen detrás del contenido */
+}
+
+.texto-banner {
+    position: relative; /* Posicionar el contenido sobre la imagen */
+    z-index: 1; /* Colocar el contenido sobre la imagen */
+    text-align: center;
+    color: #fff; /* Color del texto */
+    padding: 50px; /* Espaciado interior */
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+    display: inline-block;
+}
+
+.texto-banner h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center; /* Centrar el texto */
+    border-radius: 10px;
+    background-color:cadetblue;
+    padding: 0 20px;
+
+}
+
+.texto-banner p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color:cadetblue;
+    padding: 0 20px;
+}
+
+.texto-banner .btn {
+    padding: 10px 20px;
+    background-color:#333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+}
+/* /Banner */
