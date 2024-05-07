@@ -3,13 +3,58 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>J-E-B mySandbox</title>
+    <styles>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      
+      .container {
+        text-align: center;
+      }
+      
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+      
+      button:hover {
+        background-color: #0056b3;
+      }
+      
+      #clickCount {
+        font-size: 24px;
+      }
+    </styles>
   </head>
   
   <body>
-    <header>
-      <h1 name="Título">Clicker online</h1>
-    </header>
+    <div class="container">
+      <h1>Contador de Clicks</h1>
+      <button id="clickButton">Haz click aquí</button>
+      <p id="clickCount">0</p>
+    </div>
+    <script>
+      let clickCount = 0;
+      const clickButton = document.getElementById('clickButton');
+      const clickCountDisplay = document.getElementById('clickCount');
+      
+      clickButton.addEventListener('click', () => {
+        clickCount++;
+        clickCountDisplay.textContent = clickCount;
+      });
+    </script>
   </body>
   
   <footer>
